@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crazy Karachi</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+</head>
+<link rel="stylesheet" href="render.css">
+<body>
+
+  <header>
+    <h1>Welcome to Crazy Karachi!</h1>
+    <p>Your wildest guide to the heart of Pakistan</p>
+    <!-- Google Search moved to top -->
+    <form class="d-flex justify-content-center" action="https://www.google.com/search" method="GET" target="_blank">
+      <input type="text" class="form-control w-50" name="q" placeholder="Search Google..." required>
+      <button type="submit" class="btn btn-danger ms-2">Search</button>
+    </form>
+  </header>
+
+  <nav class="bg-dark py-2">
+    <a href="#places">Places</a>
+    <a href="#restaurants">Restaurants</a>
+    <a href="#parks">Parks</a>
+    <a href="#map">Map</a>
+  </nav>
+
+  <section id="places" class="container my-4">
+    <h2>Famous Places to Visit</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://www.tripadvisor.com/Attraction_Review-g295414-d553634-Reviews-Clifton_Beach-Karachi_Sindh_Province.html')">
+          <strong>Clifton Beach</strong> - Sunset views & camel rides.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://stdc.gos.pk/2024/10/13/mazar-e-quaid/')">
+          <strong>Mazar-e-Quaid</strong> - Tomb of the Founder 🇵🇰.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://www.gpsmycity.com/attractions/port-grand-9554.html')">
+          <strong>Port Grand</strong> - Entertainment & food street.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://www.dreamstime.com/photos-images/paf-museum.html')">
+          <strong>PAF Museum</strong> - Historic aircraft & war exhibits.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="restaurants" class="container my-4">
+    <h2>Famous Restaurants to Try</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://www.tripadvisor.com/Restaurant_Review-g295414-d3568210-Reviews-Kolachi_Restaurant-Karachi_Sindh_Province.html')">
+          <strong>Kolachi</strong> - Sea-view BBQ heaven.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://www.tripadvisor.com/Attraction_Review-g295414-d6998658-Reviews-Boat_Basin-Karachi_Sindh_Province.html')">
+          <strong>Boat Basin</strong> - Local food street vibes.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://www.tripadvisor.com/Restaurant_Review-g295414-d11934597-Reviews-Xander_s_DHA_Bukhari-Karachi_Sindh_Province.html')">
+          <strong>Xander's</strong> - Modern café for foodies.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://i.ytimg.com/vi/cSg5fVBAPVk/maxresdefault.jpg')">
+          <strong>Hussainabad</strong> - Karachi's famous foodie street.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="parks" class="container my-4">
+    <h2>Beautiful Parks to Visit</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://share.google/4BabIvS5I594Awh8X')">
+          <strong>Bagh Ibn-e-Qasim</strong> - Family-friendly fun.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://www.tripadvisor.com/Attraction_Review-g295414-d553617-Reviews-Hill_Park-Karachi_Sindh_Province.html')">
+          <strong>Hill Park</strong> - Elevated city views.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-custom" onclick="openImageInNewTab('https://www.tripadvisor.com/Attraction_Review-g295414-d551282-Reviews-Safari_Park-Karachi_Sindh_Province.html')">
+          <strong>Safari Park</strong> - Wildlife & rides.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="map" class="container my-4">
+    <h2>Interactive Map of Karachi</h2>
+    <div class="d-flex justify-content-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d115839.21417754643!2d67.01015256485601!3d24.86468829281005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTop%20sights%20in%20Karachi!5e0!3m2!1sen!2s!4v1753637785119!5m2!1sen!2s" 
+      width="100%" height="450" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Crazy Karachi Travel Guide</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function openImageInNewTab(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
